@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="sample.css">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+   <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="sample.js"></script>
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div id="heading">
+                <h1 id="heading">KEC Elective Course Picker</h1>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='https://kongu.ac.in/index.php' target="_blank">About</a></li>
+                    <li><a href='https://kongu.ac.in/contact.php' target="_blank">Contact Us</a></li>
+                    <li><button class='loginbtn' onclick="window.open('sample.html')" style="width:auto;">Log out</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                    <div  style="margin:40px;"><center>
+                        <h1 style="color:rgb(0, 0, 0);"><b>New User</b></h1></center>
+                    </div>
+                <form >
+                <input type='mail id'class='input-field'placeholder='Enter Email (kongu.edu)' required>
+                <input type='name'class='input-field'placeholder='Enter Name' required>
+                <input type='text'class='input-field'placeholder='Enter Roll no' required >
+                <input type='password'class='input-field'placeholder='Enter DOB' required>
+                <input type='phno'class='input-field'placeholder='Enter phone no' required>
+                <!-- <input type='checkbox'class='check-box'><span>Remember Password</span> -->
+                <button type='submit'class='submit-btn' onclick="window.open('main_intro.html')">Sign Up</button>
+                </form>
+            </div>
+    
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="sample.css">
+    <script src="sample.js"></script>
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div id="heading">
+                <h1 id="heading">KEC Elective Course Picker</h1>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='https://kongu.ac.in/index.php' target="_blank">About</a></li>
+                    <li><a href='https://kongu.ac.in/contact.php' target="_blank">Contact Us</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type="button"onclick="login()"class="toggle-btn"><b>Student</b></button>
+                    <button type="button"onclick="register()"class="toggle-btn"><b>Admin</b></button>
+                </div>
+        <form id='login' class='input-group-login'>
+            <center>
+            <input type='text'class='input-field'placeholder='Enter Roll no' required >
+        <b><input type='password'class='input-field'placeholder='Enter DOB' required><br></b></center>
+		    <!-- <input type='checkbox'class='check-box'><span>Remember Password</span> -->
+            <center><a href="signup.html">are you a new user?</a></center><br>
+		    <button type='submit'class='submit-btn' onclick="window.open('main_intro.html')">Log in</button>
+		</form>
+		 <form id='register' class='input-group-login'>
+             <input type='text'class='input-field'placeholder='Enter Admin ID' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+		    <!-- <input type='checkbox'class='check-box'><span>Remember Password</span> -->
+		    <button type='submit'class='submit-btn' onclick="window.open('adminlogin.html')">Log in </button>    
+	         </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
